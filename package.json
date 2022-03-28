@@ -1,0 +1,48 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "scripts": {
+    "start": "parcel src/index.html --port=3001",
+    "build": "parcel build src/index.html --public-url='./' --dist-dir=docs --no-source-maps",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d docs"
+  },
+  "author": "FWS <github.com/fang-w-shen>",
+  "license": "ISC",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "7.17.0",
+    "@babel/preset-react": "^7.16.7",
+    "@parcel/transformer-sass": "^2.3.2",
+    "@parcel/transformer-svg-react": "^2.3.2",
+    "eslint": "^7.18.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.8",
+    "postcss-modules": "^4.3.1",
+    "process": "^0.11.10",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.0",
+    "@mui/material": "^5.5.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-router-dom": "5.2.0"
+  }
+}
